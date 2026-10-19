@@ -391,28 +391,20 @@ header {
 /* Image */
 
 .image-circle {
-    width: 360px;
-    height: 360px;
-
-    border-radius: 50%;
-
-    padding: 0;
-
-    border: 1px solid var(--taupe);
-
-    background: var(--warm-white);
-
-    overflow: hidden;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%; /* Makes the frame a circle */
+  padding: 0;
+  border: 1px solid var(--taupe);
+  background: var(--warm-white);
+  overflow: hidden; /* Clips the image cleanly inside the circle */
 }
 
-
 .image-circle img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Keeps the image circular */
 }
 
 
@@ -1169,4 +1161,84 @@ footer p {
     .contact-container {
         gap: 45px;
     }
+}/* Contact Icon Boxes */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--taupe);
+  background: var(--warm-white);
+}
+
+.icon-circle i {
+  font-size: 1.2rem;
+  color: var(--dark-brown, #4a3e3d);
+}
+/* Stack label row and email text vertically */
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+/* Align icon box and header text side-by-side */
+.contact-label-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Ensure the icon box stays compact */
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--taupe);
+  background: var(--warm-white);
+}
+
+.icon-circle i {
+  font-size: 1rem;
+  color: var(--dark-brown, #4a3e3d);
+}/* Social Links Container */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Rounded Icon Badges */
+.social-links a {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px; /* Smooth squircle shape */
+  border: 1px solid var(--taupe);
+  background: var(--warm-white);
+  color: var(--dark-brown, #4a3e3d);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Subtle Hover Effect */
+.social-links a:hover {
+  background: var(--dark-brown, #4a3e3d);
+  color: var(--warm-white, #ffffff);
+  transform: translateY(-2px);
 }
