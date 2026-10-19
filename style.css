@@ -1241,4 +1241,35 @@ footer p {
   background: var(--dark-brown, #4a3e3d);
   color: var(--warm-white, #ffffff);
   transform: translateY(-2px);
+}/* Social Links Container */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Squircle Icon Badges */
+.social-links a {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px; /* Soft rounded corners matching your buttons */
+  border: 1px solid var(--taupe, #c2b69d);
+  background: var(--warm-white, #fdfbf7);
+  color: var(--dark-brown, #4a3e3d);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.social-links a:hover {
+  background: var(--dark-brown, #4a3e3d);
+  color: var(--warm-white, #ffffff);
+  transform: translateY(-2px);
 }
