@@ -17,18 +17,3 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     });
 
 });
-
-
-// CONTACT FORM
-
-const contactForm = document.querySelector(".contact-form");
-
-contactForm.addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    alert("Thank you for your message!");
-
-    contactForm.reset();
-
-});
