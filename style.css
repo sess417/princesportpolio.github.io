@@ -1988,13 +1988,22 @@ html.aura-cursor-active [contenteditable="true"] {
    Moving Picture + Flowing Waves
 ========================================== */
 
+
+/* ==========================================
+   MOCHA BACKGROUND — LAYERING FIX
+========================================== */
+
+html {
+    background: var(--cream);
+}
+
 body {
     position: relative;
     isolation: isolate;
-    background: #F8F3EC;
+    background: transparent !important;
 }
 
-/* Background picture and gradient glow */
+/* Background layer */
 .mocha-background {
     position: fixed;
     inset: -8%;
@@ -2018,19 +2027,18 @@ body {
             rgba(170, 125, 100, 0.25),
             transparent 42%
         ),
-        url("images/mocha-waves.png") center / cover no-repeat;
+        url("pics/mocha-waves.png") center / cover no-repeat;
 
     animation: mochaPictureMove 24s ease-in-out infinite alternate;
 }
 
-/* Animated flowing curves */
+/* Flowing decorative waves */
 .mocha-background::before,
 .mocha-background::after {
     content: "";
     position: absolute;
     inset: -20%;
     border-radius: 45%;
-
     pointer-events: none;
 }
 
@@ -2062,20 +2070,19 @@ body {
     animation: mochaWaveTwo 23s ease-in-out infinite alternate;
 }
 
-/* Slow picture movement */
+/* Background movement */
 @keyframes mochaPictureMove {
-    0% {
-        transform: translate3d(-1.5%, -1%, 0) scale(1);
+    from {
+        transform: translate(-1.5%, -1%) scale(1);
         background-position: center, center, center, 0% 50%;
     }
 
-    100% {
-        transform: translate3d(1.5%, 1%, 0) scale(1.08);
+    to {
+        transform: translate(1.5%, 1%) scale(1.08);
         background-position: center, center, center, 100% 50%;
     }
 }
 
-/* Flowing wave movement */
 @keyframes mochaWaveOne {
     from {
         transform: translate(-3%, 2%) rotate(-8deg) scale(1);
@@ -2096,23 +2103,53 @@ body {
     }
 }
 
-/* Dark mode */
-html[data-theme="dark"] body {
+/* DARK MODE — let the background show through sections */
+html[data-theme="dark"] {
     background: #171411;
 }
 
-html[data-theme="dark"] .mocha-background {
-    filter: brightness(0.48) saturate(0.75);
+html[data-theme="dark"] body {
+    background: transparent !important;
 }
 
-/* Mobile performance */
+html[data-theme="dark"] .mocha-background {
+    filter: brightness(0.78) saturate(0.85);
+    opacity: 1;
+}
+
+/* Transparent section backgrounds; keep cards styled */
+html[data-theme="dark"] section,
+html[data-theme="dark"] #home,
+html[data-theme="dark"] #about,
+html[data-theme="dark"] #skills,
+html[data-theme="dark"] #education,
+html[data-theme="dark"] #projects,
+html[data-theme="dark"] #contact {
+    background-color: transparent !important;
+}
+
+/* Preserve dark navigation and footer */
+html[data-theme="dark"] header,
+html[data-theme="dark"] footer {
+    background-color: #211C19;
+}
+
+/* Preserve dark card surfaces */
+html[data-theme="dark"] .info-box,
+html[data-theme="dark"] .skill-card,
+html[data-theme="dark"] .skill-box,
+html[data-theme="dark"] .project-card,
+html[data-theme="dark"] .card {
+    background-color: var(--card-bg) !important;
+}
+
+/* Mobile and reduced-motion support */
 @media (max-width: 768px) {
     .mocha-background {
         animation-duration: 30s;
     }
 }
 
-/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
     .mocha-background,
     .mocha-background::before,
@@ -2120,7 +2157,3 @@ html[data-theme="dark"] .mocha-background {
         animation: none;
     }
 }
-
-
-
-
