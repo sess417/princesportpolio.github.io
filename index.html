@@ -31,7 +31,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <div class="menu-btn">
+        <!-- Dark Mode Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <span class="theme-icon">🌓</span>
+        </button>
+
+        <div class="menu-btn">
                 ☰
             </div>
 
@@ -50,16 +55,14 @@
                 Princes <span>Matunan</span>
             </h1>
 
-            <h2>
-                Computer Engineering Student
-            </h2>
+            <h2>Computer Engineering Student</h2>
 
-            <p class="hero-description">
-                I am passionate about technology, programming,
-                embedded systems, and creating practical solutions
-                through innovative projects.
-            </p>
+<p class="hero-description">
+  <span id="typewriter"></span><span class="typewriter-cursor">|</span>
+</p>
+            
 
+                
             <div class="hero-buttons">
                 <a href="#projects" class="btn primary-btn">
                     View My Work
@@ -70,18 +73,32 @@
                 </a>
             </div>
 
-            <div class="social-links">
+            <!-- Social Links Container -->
+<!-- Social Links Container -->
+<div class="social-links">
+  <!-- GitHub -->
   <a href="https://github.com/sess417?tab=overview&from=2026-09-01&to=2026-09-30" target="_blank" aria-label="GitHub">
     <i class="fa-brands fa-github"></i>
   </a>
-  <a href="https://facebook.com/https://www.facebook.com/princes.matunan" target="_blank" aria-label="Facebook">
-    <i class="fa-brands fa-facebook"></i>
+  
+  <!-- LinkedIn -->
+  <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn" class="social-icon">
+    <i class="fab fa-linkedin-in"></i>
   </a>
-  <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
-    <i class="fa-brands fa-linkedin"></i>
+  
+  <!-- Email -->
+  <a href="mailto:princes.matunan04@gmail.com" aria-label="Email" class="social-icon">
+    <i class="fas fa-envelope"></i>
   </a>
-  <a href="https://instagram.com/m.prncsx" target="_blank" aria-label="Instagram">
-    <i class="fa-brands fa-instagram"></i>
+  
+  <!-- Facebook -->
+  <a href="https://facebook.com/https://www.facebook.com/princes.matunan" target="_blank" aria-label="Facebook" class="social-icon">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  
+  <!-- Instagram -->
+  <a href="https://instagram.com/m.prncsx" target="_blank" aria-label="Instagram" class="social-icon">
+    <i class="fab fa-instagram"></i>
   </a>
 </div>
 
@@ -506,5 +523,32 @@
 
     <script src="script.js"></script>
 
+<footer>
+  <!-- footer content -->
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const typewriterElement = document.getElementById('typewriter');
+    
+    if (typewriterElement) {
+      const textToType = "I am passionate about technology, programming, embedded systems, and creating practical solutions through innovative projects.";
+      
+      let charIndex = 0;
+      const typingSpeed = 35;
+
+      function type() {
+        if (charIndex < textToType.length) {
+          typewriterElement.textContent += textToType.charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingSpeed);
+        }
+      }
+
+      setTimeout(type, 500);
+    }
+  });
+</script>
 </body>
 </html>

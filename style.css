@@ -155,18 +155,14 @@ header {
    ================================ */
 
 .hero {
-    min-height: 100vh;
-
-    max-width: 1250px;
-    margin: auto;
-
-    padding: 150px 40px 80px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 80px;
+  min-height: auto; /* Allows it to fit content naturally on mobile */
+  max-width: 1250px;
+  margin: auto;
+  padding: 100px 20px 40px; /* Reduced top/bottom padding for mobile */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 
@@ -1272,4 +1268,290 @@ footer p {
   background: var(--dark-brown, #4a3e3d);
   color: var(--warm-white, #ffffff);
   transform: translateY(-2px);
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: auto !important;
+    padding: 80px 20px 40px !important;
+  }
+}
+/* Smooth transition for cards and skill boxes */
+.project-card, 
+.skill-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  will-change: transform;
+}
+
+/* Hover effect: lifts upward, deepens shadow, and highlights border */
+.project-card:hover, 
+.skill-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: var(--taupe);
+}/* Typewriter Effect Cursor */
+/* ==========================
+   DARK MODE & THEME STYLES
+   ========================== */
+
+/* Light Theme Variables (Default) */
+:root {
+  --bg-color: #fdfbf7;        /* Warm white */
+  --text-primary: #2d2b2a;    /* Dark taupe/charcoal */
+  --text-secondary: #6b6560;  /* Muted grey-taupe */
+  --accent: #9c8471;          /* Warm taupe accent */
+  --card-bg: #ffffff;
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --bg-color: #161514;        /* Deep subtle dark */
+  --text-primary: #f4f1ea;    /* Soft warm white */
+  --text-secondary: #a39c94;  /* Soft muted grey */
+  --accent: #c4ab99;          /* Lighter taupe accent */
+  --card-bg: #1f1e1d;
+}
+
+/* Apply variables with a smooth transition */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styling for the subtle toggle button */
+.theme-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--text-secondary);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 15px;
+}
+
+.theme-toggle-btn:hover {
+  background-color: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* FORCE ALL SECTIONS AND CARDS TO USE THEME VARIABLES */
+[data-theme="dark"] section,
+[data-theme="dark"] #skills,
+[data-theme="dark"] #about,
+[data-theme="dark"] #projects {
+  background-color: var(--bg-color) !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .info-box,
+[data-theme="dark"] .about-info,
+[data-theme="dark"] .skill-box,
+[data-theme="dark"] .skill-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .card {
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .info-box h4,
+[data-theme="dark"] .info-box p,
+[data-theme="dark"] .skill-box h3,
+[data-theme="dark"] .skill-box p,
+[data-theme="dark"] .project-card h3,
+[data-theme="dark"] .project-card h4,
+[data-theme="dark"] .project-card p,
+[data-theme="dark"] .project-card span {
+  color: var(--text-primary) !important;
+}
+/* Swapped hero name colors with glow effect on 'Princes' in Dark Mode */
+[data-theme="dark"] .hero h1 span,
+[data-theme="dark"] .hero h1 .highlight {
+  color: #F8EAD8 !important; /* Bright cream color for 'Princes' */
+  text-shadow: 0 0 12px rgba(248, 234, 216, 0.45), 
+               0 0 25px rgba(248, 234, 216, 0.25) !important; /* Ambient glowing light effect */
+}
+
+/* High-contrast, crystal-clear dark mode colors for 'Princes Matunan' */
+[data-theme="dark"] .hero h1 span,
+[data-theme="dark"] .hero h1 .highlight {
+  color: #E8D7C8 !important; /* Bright warm cream/taupe for 'Princes' */
+  text-shadow: 0 0 15px rgba(232, 215, 200, 0.35) !important; /* Subtle luminous pop */
+}
+
+[data-theme="dark"] .hero h1 {
+  color: #b49883 !important; /* Soft warm mocha/taupe for 'Matunan' */
+  text-shadow: 0 0 15px rgba(184, 163, 148, 0.25) !important; /* Gentle ambient glow */
+}
+/* ====================================================
+   ALL SECTION HEADINGS GLOW & HIGH CONTRAST (DARK MODE)
+   ==================================================== */
+
+/* Main Section Titles (About, Skills, Education, Featured Projects, Contact) */
+[data-theme="dark"] section h2,
+[data-theme="dark"] .section-title,
+[data-theme="dark"] h2 {
+  color: #B8A394 !important; /* Lighter warm taupe/mocha fill */
+  text-shadow: 0 0 14px rgba(184, 163, 148, 0.45), 
+               0 0 28px rgba(184, 163, 148, 0.25) !important; /* Soft illuminated glow */
+}
+
+/* Highlighted Accent Words in Headings ("Me", "Skills", "Projects") */
+[data-theme="dark"] section h2 span,
+[data-theme="dark"] .section-title span,
+[data-theme="dark"] h2 span {
+  color: #E8D7C8 !important; /* Bright cream accent for pop */
+  text-shadow: 0 0 15px rgba(232, 215, 200, 0.5), 
+               0 0 30px rgba(232, 215, 200, 0.3) !important; /* Vibrant halo glow */
+}
+
+/* Subheadings & Inner Headers ("Who Am I?", "My Academic Journey") */
+[data-theme="dark"] .about-text h3,
+[data-theme="dark"] .subtitle,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+  color: #D4C3B5 !important;
+  text-shadow: 0 0 12px rgba(212, 195, 181, 0.35) !important;
+}
+/* ====================================================
+   FIX PROJECT TAGS & 'VIEW PROJECT' LINKS (DARK MODE)
+   ==================================================== */
+
+/* Tech Stack Tags styling in dark mode */
+[data-theme="dark"] .project-card .tags span,
+[data-theme="dark"] .project-tags span,
+[data-theme="dark"] .tag,
+[data-theme="dark"] .tech-tag {
+  background-color: #2A2624 !important; /* Dark warm brown container */
+  color: #E8D7C8 !important;            /* Readable warm cream text */
+  border: 1px solid #4A403A !important;   /* Subtle border for separation */
+}
+
+/* "View Project →" Link styling in dark mode */
+[data-theme="dark"] .project-card a,
+[data-theme="dark"] .project-link,
+[data-theme="dark"] .view-project {
+  color: #E8D7C8 !important; /* Bright warm cream so the link pops */
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(232, 215, 200, 0.3); /* Subtle glow effect */
+}
+
+[data-theme="dark"] .project-card a:hover,
+[data-theme="dark"] .project-link:hover,
+[data-theme="dark"] .view-project:hover {
+  color: #FFFFFF !important;
+  text-shadow: 0 0 14px rgba(255, 255, 255, 0.6);
+}
+/* ====================================================
+   FIX HERO BUTTONS & OUTLINE BUTTONS (DARK MODE)
+   ==================================================== */
+
+/* Make secondary/outline buttons ("Contact Me") bright & visible */
+[data-theme="dark"] .btn-secondary,
+[data-theme="dark"] .btn-outline,
+[data-theme="dark"] a[href*="contact"],
+[data-theme="dark"] .hero-buttons a:last-child {
+  color: #E8D7C8 !important;            /* Bright cream text */
+  border-color: #8C7B70 !important;       /* Matching warm taupe border */
+  background-color: transparent !important;
+  text-shadow: 0 0 10px rgba(232, 215, 200, 0.3) !important; /* Subtle glow */
+}
+
+/* Hover state for the button */
+[data-theme="dark"] .btn-secondary:hover,
+[data-theme="dark"] .btn-outline:hover,
+[data-theme="dark"] a[href*="contact"]:hover,
+[data-theme="dark"] .hero-buttons a:last-child:hover {
+  background-color: #8C7B70 !important;
+  color: #161514 !important;            /* Dark text on warm background hover */
+  border-color: #8C7B70 !important;
+  box-shadow: 0 0 15px rgba(140, 123, 112, 0.5) !important;
+}
+/* ====================================================
+   PROFESSIONAL SOCIAL ICONS STYLING (DARK MODE)
+   ==================================================== */
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* Glassmorphic Rounded Buttons */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle dark background */
+  border: 1px solid rgba(232, 215, 200, 0.2);   /* Warm accent border */
+  color: #E8D7C8 !important;                    /* Warm cream icon color */
+  font-size: 1.15rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
+}
+
+/* Hover State - Smooth Elevation & Glow */
+.social-icon:hover {
+  background-color: #8C7B70 !important;          /* Warm taupe highlight */
+  color: #161514 !important;                     /* Dark contrast icon on hover */
+  border-color: #8C7B70 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(140, 123, 112, 0.4);
+}
+
+/* ====================================================
+   LIGHT CARD SOCIAL ICONS DESIGN
+   ==================================================== */
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+/* Base Light Mode Card Style (Matches your screenshot) */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: #FFFFFF !important;        /* Crisp white background */
+  border: 1.5px solid #C4B5A5 !important;      /* Subtle warm taupe border */
+  border-radius: 16px !important;              /* Soft rounded corners */
+  color: #1A1A1A !important;                   /* Dark solid icon */
+  font-size: 1.35rem;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+/* Hover Effect for Light Mode */
+.social-icon:hover {
+  transform: translateY(-3px);
+  border-color: #8C7B70 !important;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark Mode Adaptation (Maintains card look with readable contrast) */
+[data-theme="dark"] .social-icon {
+  background-color: #24201E !important;        /* Deep warm card container */
+  border: 1.5px solid #4A403A !important;      /* Soft dark border */
+  color: #E8D7C8 !important;                   /* Bright warm cream icon */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .social-icon:hover {
+  background-color: #E8D7C8 !important;        /* Fills with warm cream on hover */
+  color: #161514 !important;                   /* Dark icon on hover */
+  border-color: #E8D7C8 !important;
+  box-shadow: 0 0 15px rgba(232, 215, 200, 0.4) !important;
 }
