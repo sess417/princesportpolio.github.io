@@ -1555,3 +1555,115 @@ body {
   border-color: #E8D7C8 !important;
   box-shadow: 0 0 15px rgba(232, 215, 200, 0.4) !important;
 }
+/* ====================================================
+   COMPLETE PORTFOLIO DARK MODE & STYLING OVERRIDES
+   ==================================================== */
+
+/* --- 1. HERO TITLE GLOW (Princes Matunan) --- */
+[data-theme="dark"] .hero h1 span,
+[data-theme="dark"] .hero h1 .highlight {
+  color: #E8D7C8 !important; /* Crisp warm cream for Princes */
+  text-shadow: 0 0 15px rgba(232, 215, 200, 0.35) !important;
+}
+
+[data-theme="dark"] .hero h1 {
+  color: #B8A394 !important; /* Soft warm mocha/taupe for Matunan */
+  text-shadow: 0 0 15px rgba(184, 163, 148, 0.25) !important;
+}
+
+/* --- 2. SECTION HEADINGS GLOW --- */
+[data-theme="dark"] section h2,
+[data-theme="dark"] .section-title,
+[data-theme="dark"] h2 {
+  color: #B8A394 !important;
+  text-shadow: 0 0 14px rgba(184, 163, 148, 0.45) !important;
+}
+
+[data-theme="dark"] section h2 span,
+[data-theme="dark"] .section-title span,
+[data-theme="dark"] h2 span {
+  color: #E8D7C8 !important;
+  text-shadow: 0 0 15px rgba(232, 215, 200, 0.5) !important;
+}
+
+[data-theme="dark"] .about-text h3,
+[data-theme="dark"] .subtitle,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4 {
+  color: #D4C3B5 !important;
+  text-shadow: 0 0 12px rgba(212, 195, 181, 0.35) !important;
+}
+
+/* --- 3. PROJECT TECH TAGS & LINKS --- */
+[data-theme="dark"] .project-card .tags span,
+[data-theme="dark"] .project-tags span,
+[data-theme="dark"] .tag,
+[data-theme="dark"] .tech-tag {
+  background-color: #2A2624 !important;
+  color: #E8D7C8 !important;
+  border: 1px solid #4A403A !important;
+}
+
+[data-theme="dark"] .project-card a,
+[data-theme="dark"] .project-link,
+[data-theme="dark"] .view-project {
+  color: #E8D7C8 !important;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(232, 215, 200, 0.3);
+}
+
+/* --- 4. CONTACT ME BUTTON --- */
+[data-theme="dark"] .btn-secondary,
+[data-theme="dark"] .btn-outline,
+[data-theme="dark"] a[href*="contact"],
+[data-theme="dark"] .hero-buttons a:last-child {
+  color: #E8D7C8 !important;
+  border-color: #8C7B70 !important;
+  background-color: transparent !important;
+  text-shadow: 0 0 10px rgba(232, 215, 200, 0.3) !important;
+}
+
+/* --- 5. SOCIAL ICON CARDS --- */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: #FFFFFF !important;
+  border: 1.5px solid #C4B5A5 !important;
+  border-radius: 16px !important;
+  color: #1A1A1A !important;
+  font-size: 1.35rem;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  border-color: #8C7B70 !important;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .social-icon {
+  background-color: #24201E !important;
+  border: 1.5px solid #4A403A !important;
+  color: #E8D7C8 !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .social-icon:hover {
+  background-color: #E8D7C8 !important;
+  color: #161514 !important;
+  border-color: #E8D7C8 !important;
+  box-shadow: 0 0 15px rgba(232, 215, 200, 0.4) !important;
+}
