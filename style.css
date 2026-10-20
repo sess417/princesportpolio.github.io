@@ -155,14 +155,16 @@ header {
    ================================ */
 
 .hero {
-  min-height: auto; /* Allows it to fit content naturally on mobile */
-  max-width: 1250px;
-  margin: auto;
-  padding: 100px 20px 40px; /* Reduced top/bottom padding for mobile */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+    min-height: auto;
+    /* Allows it to fit content naturally on mobile */
+    max-width: 1250px;
+    margin: auto;
+    padding: 100px 20px 40px;
+    /* Reduced top/bottom padding for mobile */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 
@@ -387,20 +389,23 @@ header {
 /* Image */
 
 .image-circle {
-  width: 360px;
-  height: 360px;
-  border-radius: 50%; /* Makes the frame a circle */
-  padding: 0;
-  border: 1px solid var(--taupe);
-  background: var(--warm-white);
-  overflow: hidden; /* Clips the image cleanly inside the circle */
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    /* Makes the frame a circle */
+    padding: 0;
+    border: 1px solid var(--taupe);
+    background: var(--warm-white);
+    overflow: hidden;
+    /* Clips the image cleanly inside the circle */
 }
 
 .image-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%; /* Keeps the image circular */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Keeps the image circular */
 }
 
 
@@ -874,7 +879,7 @@ header {
 }
 
 
-.contact-info > p {
+.contact-info>p {
     color: #756D65;
 
     font-size: 15px;
@@ -1157,183 +1162,204 @@ footer p {
     .contact-container {
         gap: 45px;
     }
-}/* Contact Icon Boxes */
+}
+
+/* Contact Icon Boxes */
 .icon-circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border: 1px solid var(--taupe);
-  background: var(--warm-white);
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid var(--taupe);
+    background: var(--warm-white);
 }
 
 .icon-circle i {
-  font-size: 1.2rem;
-  color: var(--dark-brown, #4a3e3d);
+    font-size: 1.2rem;
+    color: var(--dark-brown, #4a3e3d);
 }
+
 /* Stack label row and email text vertically */
 .contact-info-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 24px;
 }
 
 /* Align icon box and header text side-by-side */
 .contact-label-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 /* Ensure the icon box stays compact */
 .icon-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border: 1px solid var(--taupe);
-  background: var(--warm-white);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid var(--taupe);
+    background: var(--warm-white);
 }
 
 .icon-circle i {
-  font-size: 1rem;
-  color: var(--dark-brown, #4a3e3d);
-}/* Social Links Container */
+    font-size: 1rem;
+    color: var(--dark-brown, #4a3e3d);
+}
+
+/* Social Links Container */
 .social-links {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
 }
 
 /* Rounded Icon Badges */
 .social-links a {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px; /* Smooth squircle shape */
-  border: 1px solid var(--taupe);
-  background: var(--warm-white);
-  color: var(--dark-brown, #4a3e3d);
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    /* Smooth squircle shape */
+    border: 1px solid var(--taupe);
+    background: var(--warm-white);
+    color: var(--dark-brown, #4a3e3d);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 /* Subtle Hover Effect */
 .social-links a:hover {
-  background: var(--dark-brown, #4a3e3d);
-  color: var(--warm-white, #ffffff);
-  transform: translateY(-2px);
-}/* Social Links Container */
+    background: var(--dark-brown, #4a3e3d);
+    color: var(--warm-white, #ffffff);
+    transform: translateY(-2px);
+}
+
+/* Social Links Container */
 .social-links {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 /* Squircle Icon Badges */
 .social-links a {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px; /* Soft rounded corners matching your buttons */
-  border: 1px solid var(--taupe, #c2b69d);
-  background: var(--warm-white, #fdfbf7);
-  color: var(--dark-brown, #4a3e3d);
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    /* Soft rounded corners matching your buttons */
+    border: 1px solid var(--taupe, #c2b69d);
+    background: var(--warm-white, #fdfbf7);
+    color: var(--dark-brown, #4a3e3d);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 /* Hover Effect */
 .social-links a:hover {
-  background: var(--dark-brown, #4a3e3d);
-  color: var(--warm-white, #ffffff);
-  transform: translateY(-2px);
+    background: var(--dark-brown, #4a3e3d);
+    color: var(--warm-white, #ffffff);
+    transform: translateY(-2px);
 }
+
 @media screen and (max-width: 768px) {
-  .hero {
-    min-height: auto !important;
-    padding: 80px 20px 40px !important;
-  }
+    .hero {
+        min-height: auto !important;
+        padding: 80px 20px 40px !important;
+    }
 }
+
 /* Smooth transition for cards and skill boxes */
-.project-card, 
+.project-card,
 .skill-box {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  will-change: transform;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    will-change: transform;
 }
 
 /* Hover effect: lifts upward, deepens shadow, and highlights border */
-.project-card:hover, 
+.project-card:hover,
 .skill-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  border-color: var(--taupe);
-}/* Typewriter Effect Cursor */
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border-color: var(--taupe);
+}
+
+/* Typewriter Effect Cursor */
 /* ==========================
    DARK MODE & THEME STYLES
    ========================== */
 
 /* Light Theme Variables (Default) */
 :root {
-  --bg-color: #fdfbf7;        /* Warm white */
-  --text-primary: #2d2b2a;    /* Dark taupe/charcoal */
-  --text-secondary: #6b6560;  /* Muted grey-taupe */
-  --accent: #9c8471;          /* Warm taupe accent */
-  --card-bg: #ffffff;
+    --bg-color: #fdfbf7;
+    /* Warm white */
+    --text-primary: #2d2b2a;
+    /* Dark taupe/charcoal */
+    --text-secondary: #6b6560;
+    /* Muted grey-taupe */
+    --accent: #9c8471;
+    /* Warm taupe accent */
+    --card-bg: #ffffff;
 }
 
 /* Dark Theme Variables */
 [data-theme="dark"] {
-  --bg-color: #161514;        /* Deep subtle dark */
-  --text-primary: #f4f1ea;    /* Soft warm white */
-  --text-secondary: #a39c94;  /* Soft muted grey */
-  --accent: #c4ab99;          /* Lighter taupe accent */
-  --card-bg: #1f1e1d;
+    --bg-color: #161514;
+    /* Deep subtle dark */
+    --text-primary: #f4f1ea;
+    /* Soft warm white */
+    --text-secondary: #a39c94;
+    /* Soft muted grey */
+    --accent: #c4ab99;
+    /* Lighter taupe accent */
+    --card-bg: #1f1e1d;
 }
 
 /* Apply variables with a smooth transition */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-primary);
-  transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Styling for the subtle toggle button */
 .theme-toggle-btn {
-  background: transparent;
-  border: 1px solid var(--text-secondary);
-  color: var(--text-primary);
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  margin-left: 15px;
+    background: transparent;
+    border: 1px solid var(--text-secondary);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 15px;
 }
 
 .theme-toggle-btn:hover {
-  background-color: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
+    background-color: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
 }
 
 /* FORCE ALL SECTIONS AND CARDS TO USE THEME VARIABLES */
@@ -1341,8 +1367,8 @@ body {
 [data-theme="dark"] #skills,
 [data-theme="dark"] #about,
 [data-theme="dark"] #projects {
-  background-color: var(--bg-color) !important;
-  color: var(--text-primary) !important;
+    background-color: var(--bg-color) !important;
+    color: var(--text-primary) !important;
 }
 
 [data-theme="dark"] .info-box,
@@ -1351,9 +1377,9 @@ body {
 [data-theme="dark"] .skill-card,
 [data-theme="dark"] .project-card,
 [data-theme="dark"] .card {
-  background-color: var(--card-bg) !important;
-  color: var(--text-primary) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 [data-theme="dark"] .info-box h4,
@@ -1364,27 +1390,35 @@ body {
 [data-theme="dark"] .project-card h4,
 [data-theme="dark"] .project-card p,
 [data-theme="dark"] .project-card span {
-  color: var(--text-primary) !important;
+    color: var(--text-primary) !important;
 }
+
 /* Swapped hero name colors with glow effect on 'Princes' in Dark Mode */
 [data-theme="dark"] .hero h1 span,
 [data-theme="dark"] .hero h1 .highlight {
-  color: #F8EAD8 !important; /* Bright cream color for 'Princes' */
-  text-shadow: 0 0 12px rgba(248, 234, 216, 0.45), 
-               0 0 25px rgba(248, 234, 216, 0.25) !important; /* Ambient glowing light effect */
+    color: #F8EAD8 !important;
+    /* Bright cream color for 'Princes' */
+    text-shadow: 0 0 12px rgba(248, 234, 216, 0.45),
+        0 0 25px rgba(248, 234, 216, 0.25) !important;
+    /* Ambient glowing light effect */
 }
 
 /* High-contrast, crystal-clear dark mode colors for 'Princes Matunan' */
 [data-theme="dark"] .hero h1 span,
 [data-theme="dark"] .hero h1 .highlight {
-  color: #E8D7C8 !important; /* Bright warm cream/taupe for 'Princes' */
-  text-shadow: 0 0 15px rgba(232, 215, 200, 0.35) !important; /* Subtle luminous pop */
+    color: #E8D7C8 !important;
+    /* Bright warm cream/taupe for 'Princes' */
+    text-shadow: 0 0 15px rgba(232, 215, 200, 0.35) !important;
+    /* Subtle luminous pop */
 }
 
 [data-theme="dark"] .hero h1 {
-  color: #b49883 !important; /* Soft warm mocha/taupe for 'Matunan' */
-  text-shadow: 0 0 15px rgba(184, 163, 148, 0.25) !important; /* Gentle ambient glow */
+    color: #b49883 !important;
+    /* Soft warm mocha/taupe for 'Matunan' */
+    text-shadow: 0 0 15px rgba(184, 163, 148, 0.25) !important;
+    /* Gentle ambient glow */
 }
+
 /* ====================================================
    ALL SECTION HEADINGS GLOW & HIGH CONTRAST (DARK MODE)
    ==================================================== */
@@ -1393,18 +1427,22 @@ body {
 [data-theme="dark"] section h2,
 [data-theme="dark"] .section-title,
 [data-theme="dark"] h2 {
-  color: #B8A394 !important; /* Lighter warm taupe/mocha fill */
-  text-shadow: 0 0 14px rgba(184, 163, 148, 0.45), 
-               0 0 28px rgba(184, 163, 148, 0.25) !important; /* Soft illuminated glow */
+    color: #B8A394 !important;
+    /* Lighter warm taupe/mocha fill */
+    text-shadow: 0 0 14px rgba(184, 163, 148, 0.45),
+        0 0 28px rgba(184, 163, 148, 0.25) !important;
+    /* Soft illuminated glow */
 }
 
 /* Highlighted Accent Words in Headings ("Me", "Skills", "Projects") */
 [data-theme="dark"] section h2 span,
 [data-theme="dark"] .section-title span,
 [data-theme="dark"] h2 span {
-  color: #E8D7C8 !important; /* Bright cream accent for pop */
-  text-shadow: 0 0 15px rgba(232, 215, 200, 0.5), 
-               0 0 30px rgba(232, 215, 200, 0.3) !important; /* Vibrant halo glow */
+    color: #E8D7C8 !important;
+    /* Bright cream accent for pop */
+    text-shadow: 0 0 15px rgba(232, 215, 200, 0.5),
+        0 0 30px rgba(232, 215, 200, 0.3) !important;
+    /* Vibrant halo glow */
 }
 
 /* Subheadings & Inner Headers ("Who Am I?", "My Academic Journey") */
@@ -1412,9 +1450,10 @@ body {
 [data-theme="dark"] .subtitle,
 [data-theme="dark"] h3,
 [data-theme="dark"] h4 {
-  color: #D4C3B5 !important;
-  text-shadow: 0 0 12px rgba(212, 195, 181, 0.35) !important;
+    color: #D4C3B5 !important;
+    text-shadow: 0 0 12px rgba(212, 195, 181, 0.35) !important;
 }
+
 /* ====================================================
    FIX PROJECT TAGS & 'VIEW PROJECT' LINKS (DARK MODE)
    ==================================================== */
@@ -1424,26 +1463,32 @@ body {
 [data-theme="dark"] .project-tags span,
 [data-theme="dark"] .tag,
 [data-theme="dark"] .tech-tag {
-  background-color: #2A2624 !important; /* Dark warm brown container */
-  color: #E8D7C8 !important;            /* Readable warm cream text */
-  border: 1px solid #4A403A !important;   /* Subtle border for separation */
+    background-color: #2A2624 !important;
+    /* Dark warm brown container */
+    color: #E8D7C8 !important;
+    /* Readable warm cream text */
+    border: 1px solid #4A403A !important;
+    /* Subtle border for separation */
 }
 
 /* "View Project →" Link styling in dark mode */
 [data-theme="dark"] .project-card a,
 [data-theme="dark"] .project-link,
 [data-theme="dark"] .view-project {
-  color: #E8D7C8 !important; /* Bright warm cream so the link pops */
-  font-weight: 500;
-  text-shadow: 0 0 10px rgba(232, 215, 200, 0.3); /* Subtle glow effect */
+    color: #E8D7C8 !important;
+    /* Bright warm cream so the link pops */
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(232, 215, 200, 0.3);
+    /* Subtle glow effect */
 }
 
 [data-theme="dark"] .project-card a:hover,
 [data-theme="dark"] .project-link:hover,
 [data-theme="dark"] .view-project:hover {
-  color: #FFFFFF !important;
-  text-shadow: 0 0 14px rgba(255, 255, 255, 0.6);
+    color: #FFFFFF !important;
+    text-shadow: 0 0 14px rgba(255, 255, 255, 0.6);
 }
+
 /* ====================================================
    FIX HERO BUTTONS & OUTLINE BUTTONS (DARK MODE)
    ==================================================== */
@@ -1453,10 +1498,13 @@ body {
 [data-theme="dark"] .btn-outline,
 [data-theme="dark"] a[href*="contact"],
 [data-theme="dark"] .hero-buttons a:last-child {
-  color: #E8D7C8 !important;            /* Bright cream text */
-  border-color: #8C7B70 !important;       /* Matching warm taupe border */
-  background-color: transparent !important;
-  text-shadow: 0 0 10px rgba(232, 215, 200, 0.3) !important; /* Subtle glow */
+    color: #E8D7C8 !important;
+    /* Bright cream text */
+    border-color: #8C7B70 !important;
+    /* Matching warm taupe border */
+    background-color: transparent !important;
+    text-shadow: 0 0 10px rgba(232, 215, 200, 0.3) !important;
+    /* Subtle glow */
 }
 
 /* Hover state for the button */
@@ -1464,45 +1512,52 @@ body {
 [data-theme="dark"] .btn-outline:hover,
 [data-theme="dark"] a[href*="contact"]:hover,
 [data-theme="dark"] .hero-buttons a:last-child:hover {
-  background-color: #8C7B70 !important;
-  color: #161514 !important;            /* Dark text on warm background hover */
-  border-color: #8C7B70 !important;
-  box-shadow: 0 0 15px rgba(140, 123, 112, 0.5) !important;
+    background-color: #8C7B70 !important;
+    color: #161514 !important;
+    /* Dark text on warm background hover */
+    border-color: #8C7B70 !important;
+    box-shadow: 0 0 15px rgba(140, 123, 112, 0.5) !important;
 }
+
 /* ====================================================
    PROFESSIONAL SOCIAL ICONS STYLING (DARK MODE)
    ==================================================== */
 
 .social-links {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 20px;
 }
 
 /* Glassmorphic Rounded Buttons */
 .social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.05); /* Subtle dark background */
-  border: 1px solid rgba(232, 215, 200, 0.2);   /* Warm accent border */
-  color: #E8D7C8 !important;                    /* Warm cream icon color */
-  font-size: 1.15rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* Subtle dark background */
+    border: 1px solid rgba(232, 215, 200, 0.2);
+    /* Warm accent border */
+    color: #E8D7C8 !important;
+    /* Warm cream icon color */
+    font-size: 1.15rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
 }
 
 /* Hover State - Smooth Elevation & Glow */
 .social-icon:hover {
-  background-color: #8C7B70 !important;          /* Warm taupe highlight */
-  color: #161514 !important;                     /* Dark contrast icon on hover */
-  border-color: #8C7B70 !important;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(140, 123, 112, 0.4);
+    background-color: #8C7B70 !important;
+    /* Warm taupe highlight */
+    color: #161514 !important;
+    /* Dark contrast icon on hover */
+    border-color: #8C7B70 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(140, 123, 112, 0.4);
 }
 
 /* ====================================================
@@ -1510,51 +1565,61 @@ body {
    ==================================================== */
 
 .social-links {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 24px;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
 }
 
 /* Base Light Mode Card Style (Matches your screenshot) */
 .social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 58px;
-  height: 58px;
-  background-color: #FFFFFF !important;        /* Crisp white background */
-  border: 1.5px solid #C4B5A5 !important;      /* Subtle warm taupe border */
-  border-radius: 16px !important;              /* Soft rounded corners */
-  color: #1A1A1A !important;                   /* Dark solid icon */
-  font-size: 1.35rem;
-  text-decoration: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background-color: #FFFFFF !important;
+    /* Crisp white background */
+    border: 1.5px solid #C4B5A5 !important;
+    /* Subtle warm taupe border */
+    border-radius: 16px !important;
+    /* Soft rounded corners */
+    color: #1A1A1A !important;
+    /* Dark solid icon */
+    font-size: 1.35rem;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s ease;
 }
 
 /* Hover Effect for Light Mode */
 .social-icon:hover {
-  transform: translateY(-3px);
-  border-color: #8C7B70 !important;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+    border-color: #8C7B70 !important;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
 /* Dark Mode Adaptation (Maintains card look with readable contrast) */
 [data-theme="dark"] .social-icon {
-  background-color: #24201E !important;        /* Deep warm card container */
-  border: 1.5px solid #4A403A !important;      /* Soft dark border */
-  color: #E8D7C8 !important;                   /* Bright warm cream icon */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #24201E !important;
+    /* Deep warm card container */
+    border: 1.5px solid #4A403A !important;
+    /* Soft dark border */
+    color: #E8D7C8 !important;
+    /* Bright warm cream icon */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .social-icon:hover {
-  background-color: #E8D7C8 !important;        /* Fills with warm cream on hover */
-  color: #161514 !important;                   /* Dark icon on hover */
-  border-color: #E8D7C8 !important;
-  box-shadow: 0 0 15px rgba(232, 215, 200, 0.4) !important;
+    background-color: #E8D7C8 !important;
+    /* Fills with warm cream on hover */
+    color: #161514 !important;
+    /* Dark icon on hover */
+    border-color: #E8D7C8 !important;
+    box-shadow: 0 0 15px rgba(232, 215, 200, 0.4) !important;
 }
+
 /* ====================================================
    COMPLETE PORTFOLIO DARK MODE & STYLING OVERRIDES
    ==================================================== */
@@ -1562,36 +1627,38 @@ body {
 /* --- 1. HERO TITLE GLOW (Princes Matunan) --- */
 [data-theme="dark"] .hero h1 span,
 [data-theme="dark"] .hero h1 .highlight {
-  color: #E8D7C8 !important; /* Crisp warm cream for Princes */
-  text-shadow: 0 0 15px rgba(232, 215, 200, 0.35) !important;
+    color: #E8D7C8 !important;
+    /* Crisp warm cream for Princes */
+    text-shadow: 0 0 15px rgba(232, 215, 200, 0.35) !important;
 }
 
 [data-theme="dark"] .hero h1 {
-  color: #B8A394 !important; /* Soft warm mocha/taupe for Matunan */
-  text-shadow: 0 0 15px rgba(184, 163, 148, 0.25) !important;
+    color: #B8A394 !important;
+    /* Soft warm mocha/taupe for Matunan */
+    text-shadow: 0 0 15px rgba(184, 163, 148, 0.25) !important;
 }
 
 /* --- 2. SECTION HEADINGS GLOW --- */
 [data-theme="dark"] section h2,
 [data-theme="dark"] .section-title,
 [data-theme="dark"] h2 {
-  color: #B8A394 !important;
-  text-shadow: 0 0 14px rgba(184, 163, 148, 0.45) !important;
+    color: #B8A394 !important;
+    text-shadow: 0 0 14px rgba(184, 163, 148, 0.45) !important;
 }
 
 [data-theme="dark"] section h2 span,
 [data-theme="dark"] .section-title span,
 [data-theme="dark"] h2 span {
-  color: #E8D7C8 !important;
-  text-shadow: 0 0 15px rgba(232, 215, 200, 0.5) !important;
+    color: #E8D7C8 !important;
+    text-shadow: 0 0 15px rgba(232, 215, 200, 0.5) !important;
 }
 
 [data-theme="dark"] .about-text h3,
 [data-theme="dark"] .subtitle,
 [data-theme="dark"] h3,
 [data-theme="dark"] h4 {
-  color: #D4C3B5 !important;
-  text-shadow: 0 0 12px rgba(212, 195, 181, 0.35) !important;
+    color: #D4C3B5 !important;
+    text-shadow: 0 0 12px rgba(212, 195, 181, 0.35) !important;
 }
 
 /* --- 3. PROJECT TECH TAGS & LINKS --- */
@@ -1599,17 +1666,17 @@ body {
 [data-theme="dark"] .project-tags span,
 [data-theme="dark"] .tag,
 [data-theme="dark"] .tech-tag {
-  background-color: #2A2624 !important;
-  color: #E8D7C8 !important;
-  border: 1px solid #4A403A !important;
+    background-color: #2A2624 !important;
+    color: #E8D7C8 !important;
+    border: 1px solid #4A403A !important;
 }
 
 [data-theme="dark"] .project-card a,
 [data-theme="dark"] .project-link,
 [data-theme="dark"] .view-project {
-  color: #E8D7C8 !important;
-  font-weight: 500;
-  text-shadow: 0 0 10px rgba(232, 215, 200, 0.3);
+    color: #E8D7C8 !important;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(232, 215, 200, 0.3);
 }
 
 /* --- 4. CONTACT ME BUTTON --- */
@@ -1617,122 +1684,443 @@ body {
 [data-theme="dark"] .btn-outline,
 [data-theme="dark"] a[href*="contact"],
 [data-theme="dark"] .hero-buttons a:last-child {
-  color: #E8D7C8 !important;
-  border-color: #8C7B70 !important;
-  background-color: transparent !important;
-  text-shadow: 0 0 10px rgba(232, 215, 200, 0.3) !important;
+    color: #E8D7C8 !important;
+    border-color: #8C7B70 !important;
+    background-color: transparent !important;
+    text-shadow: 0 0 10px rgba(232, 215, 200, 0.3) !important;
 }
 
 /* --- 5. SOCIAL ICON CARDS --- */
 .social-links {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 24px;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
 }
 
 .social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 58px;
-  height: 58px;
-  background-color: #FFFFFF !important;
-  border: 1.5px solid #C4B5A5 !important;
-  border-radius: 16px !important;
-  color: #1A1A1A !important;
-  font-size: 1.35rem;
-  text-decoration: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
-  transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    background-color: #FFFFFF !important;
+    border: 1.5px solid #C4B5A5 !important;
+    border-radius: 16px !important;
+    color: #1A1A1A !important;
+    font-size: 1.35rem;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s ease;
 }
 
 .social-icon:hover {
-  transform: translateY(-3px);
-  border-color: #8C7B70 !important;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    transform: translateY(-3px);
+    border-color: #8C7B70 !important;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="dark"] .social-icon {
-  background-color: #24201E !important;
-  border: 1.5px solid #4A403A !important;
-  color: #E8D7C8 !important;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #24201E !important;
+    border: 1.5px solid #4A403A !important;
+    color: #E8D7C8 !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .social-icon:hover {
-  background-color: #E8D7C8 !important;
-  color: #161514 !important;
-  border-color: #E8D7C8 !important;
-  box-shadow: 0 0 15px rgba(232, 215, 200, 0.4) !important;
+    background-color: #E8D7C8 !important;
+    color: #161514 !important;
+    border-color: #E8D7C8 !important;
+    box-shadow: 0 0 15px rgba(232, 215, 200, 0.4) !important;
 }
-//* Main Timeline Container */
+
+/* Main Timeline Container */
 .timeline {
-  position: relative;
-  padding-left: 30px; /* Leaves space for the vertical line on the left */
-  margin-top: 20px;
+    position: relative;
+    padding-left: 30px;
+    /* Leaves space for the vertical line on the left */
+    margin-top: 20px;
 }
 
 /* Vertical Line — Anchored at 0px from left boundary */
 .timeline::before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  bottom: 0;
-  left: 0;
-  width: 1px;
-  background-color: #d1c7b7;
+    content: '';
+    position: absolute;
+    top: 6px;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    background-color: #d1c7b7;
 }
 
 /* Bullet Dots — Anchored at 0px and centered over the 1px line */
 .timeline-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #6e5d4f;
-  transform: translateX(-50%); /* Centers the dot exactly over the line */
-  z-index: 1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6e5d4f;
+    transform: translateX(-50%);
+    /* Centers the dot exactly over the line */
+    z-index: 1;
 }
 
 /* Date / Eyebrow Text */
 .timeline-date {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: #b5a48b;
-  display: block;
-  margin-bottom: 0.25rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #b5a48b;
+    display: block;
+    margin-bottom: 0.25rem;
 }
 
 /* Timeline Headings */
 .timeline-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  line-height: 1.2;
-  margin-bottom: 0.35rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 0.35rem;
 }
 
 /* Subtitle (Institution Name) */
 .timeline-subtitle {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: #666666;
-  margin-bottom: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #666666;
+    margin-bottom: 0.75rem;
 }
 
 /* Body Text */
 .timeline-description {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #555555;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555555;
 }
+
+
+
+
+
+
+
+
+/* ==========================================
+   BLUSH MAGIC WAND CURSOR
+   Larger Wand + Bright Pink Magic Trail
+========================================== */
+
+:root {
+    /* Your existing portfolio palette */
+    --cream: #F8F5EF;
+    --warm-white: #FFFDFC;
+    --taupe: #B7A99A;
+    --mocha: #6B5B50;
+    --dark-brown: #29231F;
+    --light-brown: #8B7B6D;
+    --border: #D8D0C6;
+
+    /* Magic wand cursor colors */
+    --aura-pink: #A83265;
+    --aura-pink-light: #D96B9B;
+    --aura-pink-dark: #792044;
+    --aura-ring: rgba(168, 50, 101, 0.95);
+    --aura-glow: rgba(168, 50, 101, 0.55);
+}
+
+html.aura-cursor-active,
+html.aura-cursor-active body,
+html.aura-cursor-active body * {
+    cursor: none !important;
+}
+
+html.aura-cursor-active input,
+html.aura-cursor-active textarea,
+html.aura-cursor-active [contenteditable="true"] {
+    cursor: text !important;
+}
+
+/* Cursor container */
+#aura-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 999999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+#aura-cursor.is-visible {
+    opacity: 1;
+}
+
+/* Magic wand artwork */
+.aura-wand {
+    position: absolute;
+    width: 38px;
+    height: 48px;
+    left: -36px;
+    top: -4px;
+    overflow: visible;
+    filter:
+        drop-shadow(0 0 4px rgba(248, 213, 229, 0.9)) drop-shadow(0 0 9px rgba(217, 130, 168, 0.75));
+    transform-origin: 34px 3px;
+    transition: filter 0.2s ease, scale 0.2s ease;
+}
+
+#aura-cursor.is-hovering .aura-wand {
+    filter:
+        drop-shadow(0 0 7px #F8D5E5) drop-shadow(0 0 16px #D982A8);
+    scale: 1.12;
+}
+
+/* Optional subtle magic aura at the wand tip */
+.aura-wand-aura {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+            rgba(255, 239, 248, 0.75) 0%,
+            rgba(217, 130, 168, 0.3) 35%,
+            transparent 75%);
+    animation: wand-pulse 1.3s ease-in-out infinite alternate;
+}
+
+@keyframes wand-pulse {
+    from {
+        scale: 0.8;
+        opacity: 0.65;
+    }
+
+    to {
+        scale: 1.35;
+        opacity: 1;
+    }
+}
+
+/* Highly visible magic trail */
+.aura-sparkle {
+    position: fixed;
+    z-index: 999998;
+    pointer-events: none;
+    line-height: 1;
+    user-select: none;
+    color: #FFEAF4;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-shadow:
+        0 0 3px #FFFDFC,
+        0 0 7px #D96B9B,
+        0 0 14px rgba(168, 50, 101, 0.9),
+        0 0 24px rgba(121, 32, 68, 0.65);
+    animation: wand-sparkle-fade 950ms ease-out forwards;
+    will-change: transform, opacity;
+}
+
+@keyframes wand-sparkle-fade {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.2) rotate(-25deg);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.25) rotate(15deg);
+    }
+
+    55% {
+        opacity: 1;
+        transform: translate(calc(-50% + var(--sparkle-drift-x) * 0.5),
+                calc(-50% + var(--sparkle-drift-y) * 0.5)) scale(0.9) rotate(65deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(calc(-50% + var(--sparkle-drift-x)),
+                calc(-50% + var(--sparkle-drift-y))) scale(0.15) rotate(130deg);
+    }
+}
+
+/* Touchscreen compatibility */
+@media (hover: none),
+(pointer: coarse) {
+
+    #aura-cursor,
+    .aura-sparkle {
+        display: none !important;
+    }
+
+    html.aura-cursor-active,
+    html.aura-cursor-active body,
+    html.aura-cursor-active body * {
+        cursor: auto !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aura-wand-aura {
+        animation: none;
+    }
+
+    .aura-sparkle {
+        animation-duration: 400ms;
+    }
+}
+
+
+/* ==========================================
+   ANIMATED MOCHA BACKGROUND
+   Moving Picture + Flowing Waves
+========================================== */
+
+body {
+    position: relative;
+    isolation: isolate;
+    background: #F8F3EC;
+}
+
+/* Background picture and gradient glow */
+.mocha-background {
+    position: fixed;
+    inset: -8%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            ellipse at 20% 25%,
+            rgba(130, 88, 62, 0.25),
+            transparent 40%
+        ),
+        radial-gradient(
+            ellipse at 80% 35%,
+            rgba(230, 198, 176, 0.45),
+            transparent 45%
+        ),
+        radial-gradient(
+            ellipse at 50% 85%,
+            rgba(170, 125, 100, 0.25),
+            transparent 42%
+        ),
+        url("images/mocha-waves.png") center / cover no-repeat;
+
+    animation: mochaPictureMove 24s ease-in-out infinite alternate;
+}
+
+/* Animated flowing curves */
+.mocha-background::before,
+.mocha-background::after {
+    content: "";
+    position: absolute;
+    inset: -20%;
+    border-radius: 45%;
+
+    pointer-events: none;
+}
+
+.mocha-background::before {
+    background: radial-gradient(
+        ellipse at center,
+        transparent 35%,
+        rgba(255, 245, 232, 0.30) 36%,
+        transparent 37%,
+        transparent 52%,
+        rgba(139, 107, 84, 0.16) 53%,
+        transparent 54%
+    );
+
+    animation: mochaWaveOne 18s ease-in-out infinite alternate;
+}
+
+.mocha-background::after {
+    background: radial-gradient(
+        ellipse at center,
+        transparent 45%,
+        rgba(255, 253, 252, 0.25) 46%,
+        transparent 47%,
+        transparent 60%,
+        rgba(107, 91, 80, 0.13) 61%,
+        transparent 62%
+    );
+
+    animation: mochaWaveTwo 23s ease-in-out infinite alternate;
+}
+
+/* Slow picture movement */
+@keyframes mochaPictureMove {
+    0% {
+        transform: translate3d(-1.5%, -1%, 0) scale(1);
+        background-position: center, center, center, 0% 50%;
+    }
+
+    100% {
+        transform: translate3d(1.5%, 1%, 0) scale(1.08);
+        background-position: center, center, center, 100% 50%;
+    }
+}
+
+/* Flowing wave movement */
+@keyframes mochaWaveOne {
+    from {
+        transform: translate(-3%, 2%) rotate(-8deg) scale(1);
+    }
+
+    to {
+        transform: translate(3%, -2%) rotate(8deg) scale(1.12);
+    }
+}
+
+@keyframes mochaWaveTwo {
+    from {
+        transform: translate(3%, -2%) rotate(8deg) scale(1.08);
+    }
+
+    to {
+        transform: translate(-3%, 2%) rotate(-8deg) scale(1);
+    }
+}
+
+/* Dark mode */
+html[data-theme="dark"] body {
+    background: #171411;
+}
+
+html[data-theme="dark"] .mocha-background {
+    filter: brightness(0.48) saturate(0.75);
+}
+
+/* Mobile performance */
+@media (max-width: 768px) {
+    .mocha-background {
+        animation-duration: 30s;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .mocha-background,
+    .mocha-background::before,
+    .mocha-background::after {
+        animation: none;
+    }
+}
+
+
+
+
