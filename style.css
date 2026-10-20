@@ -615,6 +615,7 @@ header {
 
 
 /* ================================
+<<<<<<< HEAD
    EDUCATION TIMELINE
 ================================ */
 
@@ -684,6 +685,46 @@ html[data-theme="dark"] #education .timeline-date {
     color: var(--dark-brown);
     line-height: 1.2;
     margin: 0 0 0.35rem;
+=======
+   EDUCATION
+   ================================ */
+
+.timeline {
+  position: relative;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* 1. Place the vertical line at a clean fixed position */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+/* 2. Lock the dot's center anchor point directly onto that same 30px line */
+.timeline-dot {
+  position: absolute;
+  left: 30px; /* Must match the line's 'left' value */
+  transform: translateX(-50%); /* Centers the dot horizontally on the line */
+  top: 5px;   /* Adjust vertically to align with your text header */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.timeline-content {
+    background: transparent;
+
+    padding: 0;
+
+    border: none;
+>>>>>>> 230bdb4e2f2fbbbe34a0671d261be866a98fbaff
 }
 
 /* School name */
