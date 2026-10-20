@@ -615,103 +615,143 @@ header {
 
 
 /* ================================
-   EDUCATION
-   ================================ */
+   EDUCATION TIMELINE
+================================ */
 
-.timeline {
-    max-width: 850px;
-
-    margin: auto;
-
+#education .timeline {
     position: relative;
+    max-width: 850px;
+    margin: 20px auto 0;
+    padding-left: 30px;
 }
 
-
-.timeline::before {
+/* Vertical timeline line */
+#education .timeline::before {
     content: "";
-
     position: absolute;
-
-    left: 8px;
-    top: 0;
+    top: 6px;
     bottom: 0;
-
+    left: 0;
     width: 1px;
-
     background: var(--border);
 }
 
-
-.timeline-item {
+/* Each education entry */
+#education .timeline-item {
     position: relative;
-
-    padding-left: 50px;
-
+    padding-left: 25px;
     margin-bottom: 55px;
 }
 
-
-.timeline-dot {
+/* Dot centered on the vertical line */
+#education .timeline-item::before {
+    content: "";
     position: absolute;
-
-    left: 3px;
-    top: 8px;
-
+    left: -30px;
+    top: 6px;
     width: 11px;
     height: 11px;
-
     border-radius: 50%;
-
     background: var(--mocha);
+    border: 2px solid var(--cream);
+    box-sizing: border-box;
+    z-index: 1;
+}
 
-    border: 3px solid var(--cream);
+/* Date */
+/* Date */
+#education .timeline-date {
+    display: block;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #755640;
+    margin-bottom: 0.25rem;
+}
+
+/* Dark mode */
+html[data-theme="dark"] #education .timeline-date {
+    color: #C4AB99;
 }
 
 
-.timeline-content {
-    background: transparent;
-
-    padding: 0;
-
-    border: none;
+/* Education title */
+#education .timeline-title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--dark-brown);
+    line-height: 1.2;
+    margin: 0 0 0.35rem;
 }
 
-
-.timeline-content span {
-    color: var(--light-brown);
-
-    font-size: 12px;
-
-    letter-spacing: 2px;
-}
-
-
-.timeline-content h3 {
-    font-family: 'Playfair Display', serif;
-
-    font-size: 27px;
-
-    margin: 7px 0;
-}
-
-
-.timeline-content h4 {
-    color: var(--mocha);
-
-    font-size: 14px;
-
+/* School name */
+#education .timeline-subtitle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.95rem;
     font-weight: 500;
+    color: var(--mocha);
+    margin: 0 0 0.75rem;
 }
 
-
-.timeline-content p {
+/* Education description */
+#education .timeline-description {
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
     color: #756D65;
-
-    font-size: 14px;
-
-    margin-top: 10px;
+    margin: 0;
 }
 
+/* Dark mode */
+html[data-theme="dark"] #education .timeline-title {
+    color: #E8D7C8;
+}
+
+html[data-theme="dark"] #education .timeline-subtitle,
+html[data-theme="dark"] #education .timeline-description {
+    color: #D4C3B5;
+}
+
+html[data-theme="dark"] #education .timeline-date {
+    color: #C4AB99;
+}
+
+html[data-theme="dark"] #education .timeline::before {
+    background: rgba(232, 215, 200, 0.35);
+}
+
+html[data-theme="dark"] #education .timeline-item::before {
+    background: #E8D7C8;
+    border-color: #211C19;
+}
+
+/* Mobile alignment */
+@media (max-width: 550px) {
+    #education .timeline {
+        padding-left: 22px;
+    }
+
+    #education .timeline-item {
+        padding-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    #education .timeline-item::before {
+        left: -22px;
+        width: 10px;
+        height: 10px;
+    }
+
+    #education .timeline-title {
+        font-size: 1.4rem;
+    }
+
+    #education .timeline-date {
+        font-size: 0.95rem;
+    }
+}
 
 /* ================================
    PROJECTS
