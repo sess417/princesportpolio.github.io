@@ -369,7 +369,7 @@ header {
 /* Small name above image */
 
 .hero-image::before {
-    content: "◂ Princes Matunan";
+    content: "";
 
     position: absolute;
 
@@ -1666,4 +1666,73 @@ body {
   color: #161514 !important;
   border-color: #E8D7C8 !important;
   box-shadow: 0 0 15px rgba(232, 215, 200, 0.4) !important;
+}
+//* Main Timeline Container */
+.timeline {
+  position: relative;
+  padding-left: 30px; /* Leaves space for the vertical line on the left */
+  margin-top: 20px;
+}
+
+/* Vertical Line — Anchored at 0px from left boundary */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background-color: #d1c7b7;
+}
+
+/* Bullet Dots — Anchored at 0px and centered over the 1px line */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #6e5d4f;
+  transform: translateX(-50%); /* Centers the dot exactly over the line */
+  z-index: 1;
+}
+
+/* Date / Eyebrow Text */
+.timeline-date {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #b5a48b;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Timeline Headings */
+.timeline-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+}
+
+/* Subtitle (Institution Name) */
+.timeline-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 0.75rem;
+}
+
+/* Body Text */
+.timeline-description {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555555;
 }
